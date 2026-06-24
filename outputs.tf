@@ -12,3 +12,11 @@ output "s3_bucket_name" {
   value       = aws_s3_bucket.secure_bucket.id
   description = "The globally unique name of your secured S3 Bucket."
 }
+
+output "alb_dns_name" {
+  value = aws_lb.main.dns_name
+}
+
+output "rds_endpoint" {
+  value = aws_db_instance.mysql.endpoint
+}

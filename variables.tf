@@ -4,13 +4,14 @@ variable "aws_region" {
   description = "The AWS region to deploy resources into."
 }
 
-variable "my_ip" {
-  type        = string
-  description = "Your local public IP address in CIDR notation (e.g., '192.0.2.1/32') to restrict SSH access."
-}
-
 variable "project_name" {
   type        = string
   default     = "secure-aws-infrastructure"
   description = "Name prefix for all project resources."
+}
+
+variable "db_password" {
+  description = "Database password"
+  type        = string
+  sensitive   = true
 }

@@ -7,3 +7,46 @@ override.tf.json
 *_override.tf
 *_override.tf.json
 backend_setup/.terraform/
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# Variable files
+terraform.tfvars
+*.auto.tfvars
+
+# Crash logs
+crash.log
+
+# Sensitive plans
+*.tfplan
+
+# AWS credentials
+.aws/
+
+# Editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Terraform plan files
+*.plan
+*.tfplan
+
+# Environment files
+.env
+.env.*
+
+# Local overrides
+terraform.rc
+terraform.rc.json
+
+# Backup files
+*.backup
+
+backend_setup/*.tfstate
+backend_setup/*.tfstate.*
